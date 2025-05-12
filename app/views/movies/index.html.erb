@@ -8,9 +8,9 @@
   <%= link_to "New movie", new_movie_path %>
 </div>
 
-<div>
+<div class="row">
   <% @movies.each do |movie| %>
-    <div>
+    <div class="col-md-3">
       <%= render partial: "movies/movie_card", locals: { movie: movie } %>
     </div>
   <% end %>
